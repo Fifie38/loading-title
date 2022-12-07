@@ -1,0 +1,91 @@
+@font-face {
+    font-family: "WorkSans-Light";
+    src: url("WorkSans-Light.ttf");
+}
+
+body {
+    background-color: #ededed;
+    margin: 0;
+    min-height: 90vh;
+}
+
+#section-1 {
+    margin-top: 5em;
+    padding: 7em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px black;
+    
+}
+
+#section-1 h1 {
+    font-family: 'WorkSans-Light';
+}
+
+.letter {
+    font-size: 0;
+    animation: 0.1s linear anim-letter;
+    animation-fill-mode: forwards;
+}
+
+@keyframes anim-letter {
+    0% {
+        font-size: 0;
+    }
+    100% {
+        font-size: 5em;
+    }
+}
+
+.letter:nth-child(1){
+    animation-delay: 1.5s;
+}
+.letter:nth-child(2){
+    animation-delay: 1.65s;
+}
+.letter:nth-child(3){
+    animation-delay: 1.75s;
+}
+.letter:nth-child(4){
+    animation-delay: 1.85s;
+}
+.letter:nth-child(5){
+    animation-delay: 2s;
+}
+.letter:nth-child(6){
+    animation-delay: 2.15s;
+}
+.letter:nth-child(7){
+    animation-delay: 2.3s;
+}
+.letter:nth-child(8){
+    animation-delay: 2.45s;
+}
+.letter:nth-child(9){
+    animation-delay: 2.60s;
+}
+.letter:nth-child(10){
+    animation-delay: 2.75s;
+}
+.letter:nth-child(11){
+    animation-delay: 2.9s;
+}
+
+
+#l-cursor {
+    font-size: 5em;
+    animation: 0.8s infinite anim-cursor;
+}
+
+@keyframes anim-cursor {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
